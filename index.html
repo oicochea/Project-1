@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewery Project</title>
-    <link rel="stylesheet" href="/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project 1/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project 1/app.js" defer></script>
+    <script src="/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project_1/app.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
+<header>
+    <nav>
+        <a id="navLink" href="#editorsPick">See Our Creators top pick</a>
+        <a id="navLink" href="#">See My Favorite List</a>
+        <a id="navLink" href="#">Log In/Create Account</a>
+    </nav>
+</header>
 <body>
     <h2>What Brewery in you city do you want to visit today?</h2>
     <form>
@@ -16,21 +24,29 @@
         <ion-icon id="beerButton" name="beer-outline"></ion-icon>
 
     </form>
- 
+    <div id="backdrop">
     <div id= "brewery">
 
+    <a id="phoneTag" href="tel:6312974172"><ion-icon name="call"></ion-icon></a>
     </div>
-
+    </div>
 <div id="listArea">
+    <div id="likedColum">
     <h2>Brewery's I Liked</h2>
     <ul id="liked">
 
     </ul>
+    </div>
+    <div id="dislikedColum">
     <h2>Brewery's I Disliked</h2>
     <ul id="disliked">
 
     </ul>
+    </div>
 
+    <div id="editorsPick">
+
+    </div>
 </div>
 </body>
 </html>

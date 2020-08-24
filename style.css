@@ -1,13 +1,51 @@
+
+
+nav{
+    overflow: hidden;
+    background-color:black;
+    color: white;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navLink{
+    color: white;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 5px;    
+    padding: 2px;
+}
+
+
 body{
+    font-family: 'Varela Round', sans-serif;
     text-align: center;
-    background-image: url("brickwoodbg.jpg");
-    background-size: cover;
+    background-image: url("/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project_1/brickwoodbg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
     align-content: center;
+    cursor: pointer;
+   
     
 }   
 
+#backdrop{
+    background-color: black;
+    height: 350px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    align-content: center;
+}
+
 ion-icon {
-    font-size: 38px;
+    font-size: 42px;
     margin-bottom: -10px;
     fill: #f28e1c;
     
@@ -17,6 +55,7 @@ ion-icon {
 h2{
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 40px;
     padding: 5px;
     background-color: rgba(236, 157, 0,0.8);
     width: fit-content;
@@ -25,7 +64,7 @@ h2{
 }
 
 #zipBox{
-    height: 20px;
+    height: 40px;
     width: 200px;
     border-radius: 5px;
 
@@ -46,10 +85,9 @@ li{
 
 #listArea{
     margin: auto;
-    /* max-width: 700px; */
     max-height: max-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -61,10 +99,36 @@ li{
     border: white;
     height: 300px;
     width:300px;
-    background-image: url("/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project 1/stockBrewery.jpg");
+    background-image: url("stockBrewery.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-  
+  #liked{
+      height: 300px;
+      max-height: fit-content;
+      width: 400px;
+      margin-top: 20px;
+      background-image: url("/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project_1/blackboard-1906462_1920.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  #disliked{
+    height: 300px;
+    max-height: fit-content;
+    width: 400px;
+    margin-top: 20px;
+    background-image: url("/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project_1/blackboard-1906462_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#likedColum{
+    margin-right: 100px;
+}
+
+#dislikedColum{
+    margin-left: 100px;
+}
