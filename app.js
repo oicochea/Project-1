@@ -38,7 +38,7 @@ $.ajax({
         console.log("bad request")
        
 
-    }
+    }  
 });
 
 
