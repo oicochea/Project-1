@@ -28,7 +28,7 @@ $.ajax({
       (data) => {
         $('#brewery').children().remove();
            let  i= (Math.floor(Math.random() * [data.length])) 
-        $('#brewery').append($(`<li> ${data[i].name} </li>`).attr("draggable","true").attr("id" , "currentBrewery"))
+        $('#brewery').append($(`<li>${data[i].name}</li>`).attr("draggable","true").attr("id" , "currentBrewery"))
         $('#currentBrewery').append($(`<p> Street Address: ${data[i].street}       , ${data[i].city} , ${data[i].state}</p>`))
         $('#currentBrewery').draggable({helper: 'clone' });
         $("#liked").droppable(
@@ -40,7 +40,9 @@ $.ajax({
             
             var droppedItem =$(ui.draggable).clone();
             $('#liked').append(droppedItem);
-            userLiked.push(`${data[i].name}`);
+            userLiked.push(`${data[i].name}`)
+            console.log(`${data[i].name}`)
+
             $('#brewery').children().remove();
             console.log($('#brewery').children())
          
@@ -73,14 +75,19 @@ $.ajax({
   })
 });
 
-for(let i= 0 ;i <=userLiked.length;i++){
-  $('#passedLiked').append($(`<li> ${userLiked[i]} </li>`))
+// for(let i= 0 ;i <=userLiked.length;i++){
+//   console.log(userLiked[0])
+  $('#passedLiked').append($("<li>").attr("id","savedLiked" ))
+  $("#savedLiked").text(userLiked.join())
+  
 
-}
-var JSONreadyLiked = JSON.stringify(userLiked)
 
-localStorage.setItem('usersLiked', JSONreadyLiked);
-// console.log(JSON.parse(localStorage['userLiked']));
+
+// }
+// var JSONreadyLiked = JSON.stringify(userLiked)
+
+// localStorage.setItem('usersLiked', JSONreadyLiked);
+// // console.log(JSON.parse(localStorage['userLiked']));
 
 
 // $('#brewery').append($(`<li> ${data[i].name} </li>`).attr("draggable","true").attr("id" , "currentBrewery"))

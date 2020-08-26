@@ -1,10 +1,31 @@
+
+
+
+.topHalf{
+    margin-left: 30%;
+    margin-right: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.chalkBoards{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+
+}
+
 a{
     color: white;
     text-decoration: none;
+ 
 }
 
 nav{
-    margin-left: -10px;
+    margin-left: -20px;
     overflow: hidden;
     background-color:black;
     color: white;
@@ -13,7 +34,7 @@ nav{
     width: 100%;
     padding: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #navLink{
@@ -104,14 +125,8 @@ li#currentBrewery{
     bottom: 0;
 }
 
-#listArea{
-    margin: auto;
-    max-height: max-content;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    
-} 
+
+ 
 
 #brewery{
     position: relative;
@@ -141,7 +156,6 @@ li#currentBrewery{
   #disliked{
     padding-top: 3px;
     height: 300px;
-    height: 300px;
     max-height: fit-content;
     width: 400px;
     margin-top: 20px;
@@ -150,13 +164,6 @@ li#currentBrewery{
     background-repeat: no-repeat;
 }
 
-#likedColum{
-    margin-right: 100px;
-}
-
-#dislikedColum{
-    margin-left: 100px;
-}
    
 #movedBrewery{
    color:white;
@@ -165,3 +172,17 @@ li#currentBrewery{
    margin: 60px;
    font-family: 'Fredericka the Great';
 }
+
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+#likedColum{
+    margin-left: 60%;
+}
+
+#dislikedColum{
+    margin-left: 60%;
+}
+    }
