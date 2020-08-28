@@ -67,7 +67,6 @@ $.ajax({
   
 }).then(
     (data) => {
-      //  $('.brewery1').css("background-image", "url(../gubc.jpg)")
       $('.brewery1').append($(`<li> ${data[0].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick1"))
       $('.editPick1').append($(`<p> Street Address: ${data[0].street}       , ${data[0].city} , ${data[0].state}</p>`))
       $('.link1').attr("href", `${data[0].website_url}`)
@@ -83,8 +82,6 @@ $.ajax({
           
         }).then(
             (data) => {
-
-               $('.brewery2').css("background-image", "url(../gsb.png)");
               $('.brewery2').append($(`<li> ${data[2].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick2"))
               $('.editPick2').append($(`<p> Street Address: ${data[2].street}       , ${data[2].city} , ${data[2].state}</p>`))
               $('.link2').attr("href", `${data[2].website_url}`)
@@ -103,8 +100,6 @@ $.ajax({
               
             }).then(
                 (data) => {
-    
-                   $('.brewery3').css("background-image", "url(../lirb.jpeg)")
                   $('.brewery3').append($(`<li> ${data[4].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick3"))
                   $('.editPick3').append($(`<p> Street Address: ${data[4].street}       , ${data[4].city} , ${data[4].state}</p>`))
                   $(',phone3').attr ("href" , `tel:${data[4].phone}`)   
@@ -120,8 +115,6 @@ $.ajax({
                   
                 }).then(
                     (data) => {
-        
-                       $('.brewery4').css("background-image", "url(../obbc.jpg")
                       $('.brewery4').append($(`<li> ${data[0].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick4"))
                       $('.editPick4').append($(`<p> Street Address: ${data[0].street}       , ${data[0].city} , ${data[0].state}</p>`))
                       $('.link4').attr("href", `${data[0].website_url}`) 

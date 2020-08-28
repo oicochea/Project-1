@@ -147,14 +147,51 @@ li#creatorsFavs{
     border: white;
     height: 300px;
     width:300px;
-    background-image: url(../dubc.jpg);
+    background-image: url(dubc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
+#brewery2{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: white;
+    height: 300px;
+    width:300px;
+    background-image: url(gsb.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#brewery3{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: white;
+    height: 300px;
+    width:300px;
+    background-image: url(lirb.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
  
-
+#brewery4{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: white;
+    height: 300px;
+    width:300px;
+    background-image: url(obbc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #brewery{
     position: relative;
     margin: auto;
