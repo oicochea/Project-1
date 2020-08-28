@@ -71,7 +71,7 @@ $.ajax({
       $('.brewery1').append($(`<li> ${data[0].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick1"))
       $('.editPick1').append($(`<p> Street Address: ${data[0].street}       , ${data[0].city} , ${data[0].state}</p>`))
       $('.link1').attr("href", `${data[0].website_url}`)
-      $(',phone1').attr ("href" , `tel:${data[0].phone}`)   
+      $('.phone1').attr ("href" , `tel:${data[0].phone}`)   
 
     })
   });
