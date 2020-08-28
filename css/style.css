@@ -139,6 +139,19 @@ li#creatorsFavs{
     bottom: 0;
 }
 
+#brewery1{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: white;
+    height: 300px;
+    width:300px;
+    background-image: url("../dubc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
  
 
@@ -156,19 +169,6 @@ li#creatorsFavs{
     background-position: center;
 }
 
-#brewery1{
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: white;
-    height: 300px;
-    width:300px;
-    background-image: url("../dubc.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 
   #liked{
