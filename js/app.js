@@ -84,7 +84,7 @@ $.ajax({
         }).then(
             (data) => {
 
-               $('.brewery2').css("background-image", "url(../gsb.png)")
+               $('.brewery2').css("background-image", "url(gsb.png)")
               $('.brewery2').append($(`<li> ${data[2].name} </li>`).attr("id" , "creatorsFavs").addClass("editPick2"))
               $('.editPick2').append($(`<p> Street Address: ${data[2].street}       , ${data[2].city} , ${data[2].state}</p>`))
               $('.link2').attr("href", `${data[2].website_url}`)
