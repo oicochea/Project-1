@@ -1,10 +1,3 @@
-console.log("linked")
-// var passName =""
-
-
-// const userLiked= []
-
-// const userDisliked= []
 
 
 $('#beerButton').on('click', (event) => {
@@ -12,14 +5,6 @@ $('#beerButton').on('click', (event) => {
     console.log(zipCode)
     // var userLiked = new LikedArray()
     event.preventDefault();
-
-
-
-// const promise = $.ajax({
-//     url:`https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`
-// });
-
-
 $.ajax({
     url: `https://api.openbrewerydb.org/breweries?by_postal=${zipCode}`
     ,
@@ -40,16 +25,6 @@ $.ajax({
             
             var droppedItem =$(ui.draggable).clone();
             $('#liked').append(droppedItem);
-            // userLiked.push(`${data[i].name}`)
-            // var JSONLikedList = JSON.stringify(userLiked);
-            // localStorage.setItem(userLiked,JSONLikedList);
-            // var passedBeers = JSON.parse(localStorage[userLiked])
-            // console.log(`${data[i].name}`)
-            // console.log(userLiked.length)
-            // console.log(passedBeers)
-            // $(passedBeers).appendto()
-
-
             $('#brewery').children().remove();
             console.log($('#brewery').children())
          
@@ -155,10 +130,4 @@ $.ajax({
                 
                     })
                   });
-
-// for(let i= 0 ;i <=userLiked.length;i++){
-// //   console.log(userLiked[0])
-//   $('#passedLiked').append($("<li>").attr("id","savedLiked" ))
-//   $("#savedLiked").text(userLiked.join())
-  
 
