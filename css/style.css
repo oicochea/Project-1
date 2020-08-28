@@ -35,6 +35,7 @@ nav{
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
+    z-index: 9999;
 }
 
 #navLink{
@@ -51,7 +52,7 @@ body{
     text-align: center;
     background-image: url("/Users/oscaricochea/Desktop/seir-flex-zen-work/projects/Project_1/brickwoodbg.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     align-content: center;
     cursor: pointer;
    
@@ -125,6 +126,19 @@ li#currentBrewery{
     bottom: 0;
 }
 
+li#creatorsFavs{
+    list-style: none;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgba(250, 250, 244, 0.6);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+   
+    bottom: 0;
+}
+
 
  
 
@@ -141,6 +155,7 @@ li#currentBrewery{
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
   #liked{
      padding-top: 3px;
@@ -174,6 +189,21 @@ li#currentBrewery{
 }
 
 
+#editorsMessage{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#creatorsFavs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
@@ -185,4 +215,14 @@ li#currentBrewery{
 #dislikedColum{
     margin-left: 60%;
 }
+    
+
+    #creatorsFavs{
+        margin-left: 30%;
+        margin-right: 30%;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+}

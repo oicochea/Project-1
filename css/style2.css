@@ -1,10 +1,11 @@
 a{
     color: white;
     text-decoration: none;
+ 
 }
 
 nav{
-    margin-left: -10px;
+    margin-left: -20px;
     overflow: hidden;
     background-color:black;
     color: white;
@@ -13,7 +14,8 @@ nav{
     width: 100%;
     padding: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    z-index: 9999;
 }
 
 #navLink{
@@ -39,3 +41,4 @@ body{
 h1{
     margin-top: 50px;
 }
+
