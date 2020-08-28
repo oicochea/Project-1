@@ -50,7 +50,7 @@ nav{
 body{
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    background-image: url("brickwoodbg.jpg");
+    background-image: url("../brickwoodbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
