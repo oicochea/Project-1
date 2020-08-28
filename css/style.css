@@ -188,12 +188,15 @@ li#creatorsFavs{
    font-family: 'Fredericka the Great';
 }
 
-
-#editorsMessage{
-    text-align: center;
-    display: inline-flex;
-    flex-direction: row;
+#messageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
+
+}
+#editorsMessage{
+    text-align: center
 }
 
 #creatorsFavs{
@@ -208,21 +211,34 @@ li#creatorsFavs{
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
+
+ .topHalf{
+    margin-left: 21%;
+    margin-right: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }       
 #likedColum{
-    margin-left: 60%;
+    margin-left: 46%;
 }
 
 #dislikedColum{
-    margin-left: 60%;
+    margin-left: 46%;
 }
     
 
     #creatorsFavs{
-        margin-left: 30%;
+        margin-left: 19%;
         margin-right: 30%;
         display: inline-flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    #editorsMessage{
+        text-align: center;
+        margin-right: -200px;
     }
 
 }

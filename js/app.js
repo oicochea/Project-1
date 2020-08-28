@@ -2,7 +2,7 @@ console.log("linked")
 // var passName =""
 
 
-const userLiked= []
+// const userLiked= []
 
 // const userDisliked= []
 
@@ -40,13 +40,14 @@ $.ajax({
             
             var droppedItem =$(ui.draggable).clone();
             $('#liked').append(droppedItem);
-            userLiked.push(`${data[i].name}`)
-            var JSONLikedList = JSON.stringify(userLiked);
-            localStorage.setItem(userLiked,JSONLikedList);
-            var passedBeers = JSON.parse(localStorage[userLiked])
-            console.log(`${data[i].name}`)
-            console.log(userLiked.length)
-            console.log(passedBeers)
+            // userLiked.push(`${data[i].name}`)
+            // var JSONLikedList = JSON.stringify(userLiked);
+            // localStorage.setItem(userLiked,JSONLikedList);
+            // var passedBeers = JSON.parse(localStorage[userLiked])
+            // console.log(`${data[i].name}`)
+            // console.log(userLiked.length)
+            // console.log(passedBeers)
+            // $(passedBeers).appendto()
 
 
             $('#brewery').children().remove();
